@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script
+			src="https://kit.fontawesome.com/ffe1867352.js"
+			crossorigin="anonymous"
+		></script>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Raleway&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" type="text/css" href="./css/style.css" />
+		<title>Countdown Timer</title>
+	</head>
+	<body>
+		<header>
+			<h1 class="app-name">Countdown Timer</h1>
+		</header>
+		<div class="countdown-timer">
+			<div class="timer-body">
+				<div class="settings-section">
+					<button class="settings-btn">
+						<i class="fa-solid fa-sliders fa-xl"></i>
+					</button>
+				</div>
+
+				<h1 class="event-name">Nowy rok</h1>
+				<div class="time-cards">
+					<div class="time-card">
+						<p class="event-date">Dni</p>
+						<p class="days time"></p>
+					</div>
+
+					<div class="time-card">
+						<p class="event-date">Godziny</p>
+						<p class="hours time"></p>
+					</div>
+
+					<div class="time-card">
+						<p class="event-date">Minuty</p>
+						<p class="minutes time"></p>
+					</div>
+
+					<div class="time-card">
+						<p class="event-date">Sekundy</p>
+						<p class="seconds time"></p>
+					</div>
+				</div>
+			</div>
+
+			<div class="settings">
+				<h1>Ustawienia</h1>
+				<label for="event-name">Nazwa wydarzenia:</label>
+				<input
+					type="text"
+					id="event-name"
+					placeholder="Wpisz nazwę wydarzenia"
+				/>
+
+				<table class="date">
+					<tr>
+						<td><label for="event-day">Dzień:</label></td>
+						<td><label for="event-month">Miesiąc:</label></td>
+						<td><label for="event-year">Rok:</label></td>
+					</tr>
+					<tr>
+						<td>
+							<input type="number" min="1" max="31" id="event-day" value="1" />
+						</td>
+						<td>
+							<input
+								type="number"
+								min="1"
+								max="12"
+								id="event-month"
+								value="1"
+							/>
+						</td>
+						<td>
+							<input
+								type="number"
+								min="2023"
+								max="2100"
+								id="event-year"
+								value="2024"
+							/>
+						</td>
+					</tr>
+				</table>
+				<button class="save"><span class="button-text">Zapisz</span></button>
+			</div>
+		</div>
+		<script src="./js/main.js"></script>
+	</body>
+</html>

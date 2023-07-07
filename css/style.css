@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bgc-div: rgba(251, 242, 241, 0.7);
+  --bgc-settings: rgba(251, 242, 241);
+  --dark: #554c43;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  background-image: url("../pic/books-2385398_1280.jpg");
+  background-size: cover;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+}
+header .app-name {
+  margin-top: 20px;
+  padding: 30px 150px;
+  font-size: 76px;
+  font-family: "Dancing Script", cursive;
+  letter-spacing: 4px;
+  background-color: var(--bgc-div);
+  border-radius: 20px;
+}
+
+.countdown-timer {
+  display: flex;
+  justify-content: center;
+  margin: 40px 40px 0;
+  padding: 5px 20px 40px;
+}
+.countdown-timer .timer-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 835px;
+  height: 500px;
+  background-color: var(--bgc-div);
+  border-radius: 20px;
+}
+.countdown-timer .timer-body .settings-section {
+  height: 10%;
+  width: 100%;
+}
+.countdown-timer .timer-body .settings-section .settings-btn {
+  position: relative;
+  top: 40%;
+  left: 92%;
+  padding: 1px;
+  height: 50px;
+  width: 50px;
+  color: var(--dark);
+  background: none;
+  border: var(--dark) solid 2px;
+  border-radius: 5px;
+  transition: background 0.4s;
+  cursor: pointer;
+}
+.countdown-timer .timer-body .settings-section .settings-btn:hover {
+  background: var(--bgc-div);
+}
+.countdown-timer .timer-body .time-cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.countdown-timer .timer-body .time-cards .time-card {
+  margin: 20px;
+  padding: 30px;
+  width: 150px;
+  height: 200px;
+  text-align: center;
+  background-color: var(--bgc-div);
+  border: 3px solid var(--bgc-settings);
+  border-radius: 20px;
+}
+.countdown-timer .timer-body .time-cards .time-card .event-date {
+  font-size: 20px;
+}
+.countdown-timer .timer-body .time-cards .time-card .time {
+  margin-top: 40px;
+  font-size: 40px;
+  font-weight: bold;
+}
+.countdown-timer .timer-body h1 {
+  margin: 50px;
+  font-size: 40px;
+}
+.countdown-timer .settings {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 36%;
+  right: calc(50% - 380px);
+  padding: 20px;
+  width: 760px;
+  height: 390px;
+  font-size: 18px;
+  opacity: 0;
+  background-color: var(--bgc-settings);
+  border-radius: 20px;
+  transition: opacity 0.3s;
+}
+.countdown-timer .settings .event-name {
+  margin: 15px;
+}
+.countdown-timer .settings label {
+  padding: 20px 20px;
+}
+.countdown-timer .settings input {
+  margin-bottom: 30px;
+  padding: 10px 20px;
+  width: 335px;
+  height: 40px;
+}
+.countdown-timer .settings .date {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 100px;
+}
+.countdown-timer .settings .date input {
+  margin: 10px 0 35px;
+  padding: 5px 10px;
+  height: 40px;
+  width: 110px;
+}
+.countdown-timer .settings .save {
+  width: 100px;
+  height: 50px;
+  font-size: 16px;
+  color: var(--dark);
+  background: none;
+  border: var(--dark) solid 2px;
+  border-radius: 5px;
+  transition: font-size 0.3s;
+  cursor: pointer;
+}
+.countdown-timer .settings .save .button-text {
+  font-family: "Raleway", sans-serif;
+}
+.countdown-timer .settings .save:hover {
+  font-size: 18px;
+}
+.countdown-timer .show {
+  opacity: 1;
+}/*# sourceMappingURL=style.css.map */
